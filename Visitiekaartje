@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Visitekaartje</title>
+    <style>
+        /* 
+    </style>
+</head>
+<body>
+    <div class="visitekaartje">
+        <h1>Naam: <?php echo "Ronaldo"; ?></h1>
+        <p>leeftijd: <?php echo ""; ?></p>
+        <p>Plaats: <?php echo "Amsterdam"; ?></p>
+        <p>: <?php eHobbiescho ""; ?></p>
+    </div>
+</body>
+</html>
