@@ -1,59 +1,167 @@
 <!DOCTYPE html>
-<html lang="nl">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FDND Visitekaartje</title>
-    <link rel="stylesheet" href="styles/style.css">
-  </head>
-  <body>
-    
-    <article>
-      
-      <header>
-        
-        <h1>Ronaldo Bernadina</h1>
-        
-        <p><em>Current hva student</em></p>
-        
-        <button>
-          <svg width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <title>Wijzig layout</title>
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-            <path d="M4 8v-2a2 2 0 0 1 2 -2h2"></path>
-            <path d="M4 16v2a2 2 0 0 0 2 2h2"></path>
-            <path d="M16 4h2a2 2 0 0 1 2 2v2"></path>
-            <path d="M16 20h2a2 2 0 0 0 2 -2v-2"></path>
-          </svg>
-          <svg width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="red" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-            <path d="M15 19v-2a2 2 0 0 1 2 -2h2"></path>
-            <path d="M15 5v2a2 2 0 0 0 2 2h2"></path>
-            <path d="M5 15h2a2 2 0 0 1 2 2v2"></path>
-            <path d="M5 9h2a2 2 0 0 0 2 -2v-2"></path>
-          </svg>
-        </button>
-        
-      </header>
-  
-      <img src="" alt="" width="800" height="800">
 
-      <dl>
-        <dt>24</dt>
-        <dd>🏆🏆🏆</dd>
-        
-        <dt>Amsterdam</dt>
-        <dd>🏆🏆</dd>
-        
-        <dt> Voetbal</dt>
-        <dd>🏆🏆🏆🏆</dd>
-      </dl>
-  
-      <p>Het WEB is te gek! <br> Ik wil toffe webshots gaan bouwen voor mijn website .</p>
-      
-    </article>
-
-    <script src="scripts/script.js"></script>
-    
-  </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mijn Profiel</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #525e65;
+      /* Achtergrondkleur van de header */
+      color: #fff;
+      /* Tekstkleur van de header */
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    header h1 {
+      font-size: 30px;
+      /* Grootte van de titel in de header */
+    }
+
+    .profile {
+      max-width: 1200px;
+      /* Maximale breedte van het profielgedeelte */
+      margin: 20px auto;
+      /* Het profiel wordt gecentreerd op de pagina */
+      background-color: #fff;
+      /* Achtergrondkleur van het profiel */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      /* Schaduw rond het profiel */
+      display: flex;
+      /* Gebruik flexbox om de profielafbeelding en informatie naast elkaar weer te geven */
+      
+    }
+    
+
+    .profile img {
+      max-width: 200px;
+      /* Maximale breedte van de profielfoto */
+      border-radius: 10px;
+      /* Afgeronde hoeken van de profielfoto */
+      margin: 20px;
+      /* Buitenmarges rond de profielfoto */
+      
+    }
+
+    .left {
+      flex: ;
+      /* Linkerkolom krijgt 1 deel van de beschikbare ruimte */
+      padding: 20px;
+      /* Binnenmarges voor de linkerkolom */ 
+      background-color: #4b5054;
+      /* Achtergrondkleur van de linkerkolom */
+      color: #fff;
+      /* Tekstkleur van de linkerkolom */
+    }
+
+    .right {
+      flex: 3;
+      /* Rechterkolom krijgt 2 delen van de beschikbare ruimte */
+      padding: 20px;
+      /* Binnenmarges voor de rechterkolom */
+    }
+
+    .kaderblok {
+      border: 2px solid #fff;
+      /* Witte rand om de blauwe kaders* /
+      padding: 10px;
+      /* Binnenmarges voor de blauwe kaders */
+      margin-bottom: 10px;
+      /* Ruimte tussen de kaders */
+    }
+
+    .blauw-kader {
+      border: 2px solid #839155;
+      /* Blauwe rand om de blauwe kaders */
+      padding: 10px;
+      /* Binnenmarges voor de blauwe kaders */
+      margin-bottom: 10px;
+      /* Ruimte tussen de kaders */
+    }
+    .hobby-kader{
+      border:2px Solid #4b5054
+      padding: 10px
+      Margin-top:10px
+    .bio {
+      font-size: 10px;
+      /* Grootte van de biografietekst */
+      margin-top: 20px;
+      /* Ruimte boven de biografietekst */
+      line-height: 1.6;
+      /* lijn hoogte/
+
+      /* Create three equal columns that float next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Mijn Visitiekaart</h1> <!-- Titel in de header -->
+  </header>
+
+  <div class="profile">
+    <div class="left">
+      <!-- Blauwe kaders voor naam, leeftijd, plaats en vorige opleiding etc -->
+      <div class="blauw-kader">
+        <span class="emoji">👤</span> Naam: Ronaldo Bernadina
+      </div>
+      <div class="blauw-kader">
+        <span class="emoji">🎂</span> Leeftijd: 24 Jaar.
+      </div>
+      <div class="blauw-kader">
+        <span class="emoji">🏡</span> Plaats: Amsterdam/Rotterdam
+      </div>
+      <div class="blauw-kader">
+        <span class="emoji">📚</span> Vorige Opleiding: MBO 4 Filliaalmanager 
+      </div>
+    </div class="blauw-kader">
+    <div>
+    <div class="right">
+      
+      <IMG src="IMG_1308.PNG"
+      
+
+      <p class="bio">
+        <div></div>
+        👋 Welkom op mijn profiel! Hier vind je meer informatie over mij. Je kunt me volgen en in contact komen via 
+        <a class="link" href= 
+      </p>
+    </div>
+  </div>
+</body> 
+
+
+</html>
+
