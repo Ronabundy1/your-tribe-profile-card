@@ -1,139 +1,179 @@
 <!DOCTYPE html>
-
-</html>
-
-<!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mijn Profiel</title>
+  <!-- Voeg Font Awesome library toe voor iconen -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f7f7f7;
+      background-color: #f2f2f2;
       margin: 0;
       padding: 0;
+      background-image: url('achtergrondafbeelding.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      transition: background-color 0.5s ease-in-out;
+    }
+
+    /* Voeg overgang toe aan achtergrondkleur bij hover */
+    body:hover {
+      background-color: #e0e0e0;
+    }
+
+    /* Mediaquery voor kleinere schermen (bijv. mobiel) */
+    @media screen and (max-width: 768px) {
+      /* Andere stijlregels voor kleinere schermen */
     }
 
     header {
-      background-color: #525e65;
-      /* Achtergrondkleur van de header */
+      background: linear-gradient(to right, #007bff, #0056b3);
       color: #fff;
-      /* Tekstkleur van de header */
       text-align: center;
       padding: 20px 0;
+      transition: background 0.5s ease-in-out, transform 0.3s ease-in-out;
+    }
+
+    /* Voeg hover-effect toe aan header */
+    header:hover {
+      background: linear-gradient(to right, #0056b3, #007bff);
+      transform: translateY(-5px);
     }
 
     header h1 {
       font-size: 30px;
-      /* Grootte van de titel in de header */
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+      animation: bounce 1s ease infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
     }
 
     .profile {
       max-width: 1200px;
-      /* Maximale breedte van het profielgedeelte */
       margin: 20px auto;
-      /* Het profiel wordt gecentreerd op de pagina */
       background-color: #fff;
-      /* Achtergrondkleur van het profiel */
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      /* Schaduw rond het profiel */
       display: flex;
-      /* Gebruik flexbox om de profielafbeelding en informatie naast elkaar weer te geven */
-      
+      transition: box-shadow 0.5s ease-in-out;
     }
-    
+
+    /* Voeg hover-effect toe aan profielcontainer */
+    .profile:hover {
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
 
     .profile img {
       max-width: 200px;
-      /* Maximale breedte van de profielfoto */
       border-radius: 10px;
-      /* Afgeronde hoeken van de profielfoto */
       margin: 20px;
-      /* Buitenmarges rond de profielfoto */
-      
+      transition: transform 0.3s ease-in-out;
+    }
+
+    /* Voeg hover-effect toe aan profielfoto */
+    .profile img:hover {
+      transform: scale(1.1) rotate(5deg);
     }
 
     .left {
-      flex: ;
-      /* Linkerkolom krijgt 1 deel van de beschikbare ruimte */
+      flex: 1;
       padding: 20px;
-      /* Binnenmarges voor de linkerkolom */ 
       background-color: #4b5054;
-      /* Achtergrondkleur van de linkerkolom */
       color: #fff;
-      /* Tekstkleur van de linkerkolom */
     }
 
     .right {
-      flex: 3;
-      /* Rechterkolom krijgt 2 delen van de beschikbare ruimte */
+      flex: 2;
       padding: 20px;
-      /* Binnenmarges voor de rechterkolom */
-    }
-
-    .kaderblok {
-      border: 2px solid #fff;
-      /* Witte rand om de blauwe kaders* /
-      padding: 10px;
-      /* Binnenmarges voor de blauwe kaders */
-      margin-bottom: 10px;
-      /* Ruimte tussen de kaders */
     }
 
     .blauw-kader {
-      border: 2px solid #839155;
-      /* Blauwe rand om de blauwe kaders */
+      border: 2px solid #007bff;
       padding: 10px;
-      /* Binnenmarges voor de blauwe kaders */
       margin-bottom: 10px;
-      /* Ruimte tussen de kaders */
+      transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.3s ease-in-out;
     }
-    .hobby-kader{
-      border:2px Solid #4b5054
-      padding: 10px
-      Margin-top:10px
+
+    /* Voeg achtergrondkleurverandering op hover toe aan kaders */
+    .blauw-kader:hover {
+      background-color: #0056b3;
+      color: #fff;
+      transform: scale(1.05);
+    }
+
+    .hobby-kader {
+      border: 2px solid #e74c3c;
+      padding: 10px;
+      margin-top: 10px;
+      transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    }
+
+    /* Voeg achtergrondkleurverandering op hover toe aan hobbykaders */
+    .hobby-kader:hover {
+      background-color: #d63031;
+      color: #fff;
+      transform: scale(1.05);
+    }
+
     .bio {
-      font-size: 10px;
-      /* Grootte van de biografietekst */
+      font-size: 14px;
       margin-top: 20px;
-      /* Ruimte boven de biografietekst */
       line-height: 1.6;
-      /* lijn hoogte/
+      transition: background-color 0.3s ease-in-out, animation 1s ease-in-out infinite;
+    }
 
-      /* Create three equal columns that float next to each other */
-.column {
-  float: left;
-  width: 33.33%;
-}
+    /* Voeg achtergrondkleurverandering op hover toe aan biografie */
+    .bio:hover {
+      background-color: #f2f2f2;
+      animation: pulse 1s ease-in-out infinite;
+    }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.05);
+      }
+    }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-}
+    /* Voeg een zweefeffect toe aan sociale media links */
+    .link {
+      transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    }
+
+    /* Voeg hover-effect toe aan sociale media links */
+    .link:hover {
+      color: #007bff;
+      transform: scale(1.1);
+      animation: float 0.5s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-5px);
+      }
     }
   </style>
 </head>
-
 <body>
   <header>
-    <h1>Mijn Visitiekaart</h1> <!-- Titel in de header -->
+    <h1>Mijn Visitiekaart</h1>
   </header>
 
   <div class="profile">
     <div class="left">
-      <!-- Blauwe kaders voor naam, leeftijd, plaats en vorige opleiding etc -->
       <div class="blauw-kader">
         <span class="emoji">👤</span> Naam: Ronaldo Bernadina
       </div>
@@ -144,24 +184,17 @@
         <span class="emoji">🏡</span> Plaats: Amsterdam/Rotterdam
       </div>
       <div class="blauw-kader">
-        <span class="emoji">📚</span> Vorige Opleiding: MBO 4 Filliaalmanager 
+        <span class="emoji">📚</span> Vorige Opleiding: MBO 4 Filiaalmanager
       </div>
-    </div class="blauw-kader">
-    <div>
-    <div class="right">
-      
-      <IMG src="IMG_1308.PNG"
-      
-
-      <p class="bio">
-        <div></div>
-        👋 Welkom op mijn profiel! Hier vind je meer informatie over mij. Je kunt me volgen en in contact komen via 
-        <a class="link" href= 
-      </p>
+      <div class="blauw-kader">
+        <span class="emoji">⚽</span> Hobby's: Voetbal, Lezen, Reizen
+      </div>
     </div>
-  </div>
-</body> 
 
+    <div class="right">
+      <img src="IMG_1308.PNG" alt="Profielfoto">
+      <p><em>mijn vrienden kennen mij als een enthousiat persoon die altijd een positieve instelling heeft wanneer dan ook.  .</em></p>
+    </div>
+</div>
 
-</html>
 
