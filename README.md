@@ -1,5 +1,2 @@
-> Fork deze leertaak en ga aan de slag, de instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
-
-## Licentie
-
-This project is licensed under the terms of the [MIT license](./LICENSE).
+🖥️ Live URL - https://ovenmagnetron.github.io/your-tribe-profile-card/
+🖥️ Live UR  - https://ronabundy1.github.io/your-tribe-profile-card/
