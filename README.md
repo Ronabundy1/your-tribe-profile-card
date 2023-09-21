@@ -28,11 +28,8 @@ Dit visitekaartje is gemaakt met behulp van de volgende technologieën:
 
 
 
-Als je de broncode wilt bekijken of bijdragen aan dit project, kun je de repository klonen en lokaal openen:
 
-
-git clone https://github.com/ronabundy1/your-tribe-profile-card.git
-
+Wiki:https://github.com/Ronabundy1/your-tribe-profile-card/wiki/Wiki
 🖥️ Live UR  - https://ronabundy1.github.io/your-tribe-profile-card/
 
 
