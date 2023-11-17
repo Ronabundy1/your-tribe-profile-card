@@ -24,7 +24,7 @@ Je kunt mijn visitekaartje online bekijken via deze link:
 Dit visitekaartje is gemaakt met behulp van de volgende technologieën:
 - HTML
 - CSS
-- JavaScript
+
 
 
 
